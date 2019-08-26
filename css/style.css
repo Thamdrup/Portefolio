@@ -1,13 +1,16 @@
 body{
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
 }
 
 .header{
-    height: 16em;
+    height: 18em;
     max-width: 250px;
+    /* background-color: grey; */
+    border-radius: 0 0 7em 0;
+    position: absolute;
     background-color: grey;
-    border-radius: 0 2em 5em 0;
 }
 .header_h1{
     font-size: 1.5em;
@@ -15,13 +18,14 @@ body{
     padding: .6em;
 }
 .header_img{
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 65px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 .header_ul{
     display: flex;
+    /* margin-left: .3em; */
 }
 .header_li{
     list-style:  none;
@@ -31,4 +35,17 @@ a:link, a:active, a:visited{
     text-decoration: none;
     color: black;
     font-size: 1.2em;
+}
+.main{
+    background-color: black;
+    color: white;
+    height: 1000px;
+
+}
+.main_container{
+    margin: 0 0 0 1em;
+}
+.main_h2{
+    padding-top: 13em;
+margin: 0;
 }
