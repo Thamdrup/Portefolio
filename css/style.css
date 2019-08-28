@@ -1,35 +1,47 @@
 body{
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: relative;
 }
-
 .header{
-    height: 18em;
-    max-width: 250px;
-    /* background-color: grey; */
-    border-radius: 0 0 7em 0;
-    position: absolute;
-    background-color: grey;
+    height: 5em;
+    background-color: whitesmoke;
+    border-bottom: 2px solid dodgerblue;
+    display: flex;
 }
 .header_h1{
     font-size: 1.5em;
     margin: 0;
-    padding: .6em;
+    padding: .8em;
 }
 .header_img{
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     border-radius: 65px;
-    margin-left: 50px;
+    border: 2px solid dodgerblue;
+    margin: 10px 0 0 20px;
+    object-fit: cover;
 }
 .header_ul{
     display: flex;
-    /* margin-left: .3em; */
+    padding: 0;
+    margin-left: 3em;
 }
 .header_li{
     list-style:  none;
-    margin: .4em 1.1em 0 1.1em;
+    margin: .2em 1em 0 1em; 
+    font-size: 1.5em;
+}
+.header_liner{
+    margin: 1.7em 0 0 3em;
+    height: 2px;
+    width: 150px;
+    background-color: dodgerblue;
+    transform: rotate(135deg);
+}
+.font_i :hover{
+    border-bottom: 2px solid dodgerblue;
+    border-radius: 8px;
+    border-width: 3px;
 }
 a:link, a:active, a:visited{
     text-decoration: none;
@@ -39,13 +51,43 @@ a:link, a:active, a:visited{
 .main{
     background-color: black;
     color: white;
-    height: 1000px;
-
-}
-.main_container{
-    margin: 0 0 0 1em;
+    padding: 5em 5em 5em 5em;
 }
 .main_h2{
-    padding-top: 13em;
+    padding-top: 3em;
 margin: 0;
+}
+.project_container{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-gap: 5em;
+    box-shadow: 0 0 -5px 0 dodgerblue;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+.project_card{
+    border: 1px solid honeydew;
+    border-radius: 5px;
+    padding: .6em;
+    width: 350px;
+    text-align: center;
+}
+.project_card_img{
+width: 350px;
+}
+.project_card_text{
+    margin-left: 1em;
+}
+
+
+
+
+        /* Desktop */
+    @media (min-width: 750px) {
+
+}
+
+        /* Mobile */
+    @media (max-width: 750px) {
+
 }
